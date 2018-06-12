@@ -2,6 +2,9 @@
 # This script removes unwanted Apps that come with Windows. If you  do not want
 # to remove certain Apps comment out the corresponding lines below.
 
+# See info about many of these apps here:
+# https://docs.microsoft.com/en-us/windows/application-management/apps-in-windows-10
+
 Import-Module -DisableNameChecking $PSScriptRoot\..\lib\take-own.psm1
 Import-Module -DisableNameChecking $PSScriptRoot\..\lib\force-mkdir.psm1
 
@@ -20,14 +23,14 @@ $apps = @(
     "Microsoft.BingWeather"
     #"Microsoft.FreshPaint"
     "Microsoft.Microsoft3DViewer"
-    "Microsoft.MicrosoftOfficeHub"
+    #Tom "Microsoft.MicrosoftOfficeHub"
     "Microsoft.MicrosoftSolitaireCollection"
     "Microsoft.MicrosoftPowerBIForWindows"
     "Microsoft.MinecraftUWP"
     #"Microsoft.MicrosoftStickyNotes"
     #Tom "Microsoft.NetworkSpeedTest"
     #Tom "Microsoft.Office.OneNote"
-    #"Microsoft.OneConnect"
+    #Tom "Microsoft.OneConnect"  # for "paid wifi"
     "Microsoft.People"
     "Microsoft.Print3D"
     "Microsoft.SkypeApp"
@@ -55,8 +58,8 @@ $apps = @(
     "Microsoft.GetHelp"
     "Microsoft.Getstarted"
     "Microsoft.Messaging"
-    "Microsoft.Office.Sway"
-    "Microsoft.OneConnect"
+    #Tom "Microsoft.Office.Sway"   # Office Sway is a presentation program and is part of the Microsoft Office family of products.
+    #Tom "Microsoft.OneConnect"
     "Microsoft.WindowsFeedbackHub"
 
     # Creators Update apps
